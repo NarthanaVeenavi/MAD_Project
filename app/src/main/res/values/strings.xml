@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="appname">REDWINGS</string>
+    <string name="acc">Choose Your Account</string>
+    <string name="donor">Blood Donor</string>
+    <string name="patient">Patient</string>
+    <string name="banks">Blood Bank</string>
+    <string name="campaign">Organization</string>
+    <string name="login">LOGIN</string>
+    <string name="username">User name</string>
+    <string name="password">Password</string>
+    <string name="forgot_pw">FORGOT PASSWORD?</string>
+    <string name="create_acc">Create an Account</string>
+    <string name="signup">SIGNUP</string>
+
+</resources>
