@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Home</string>
     <string name="appname">REDWINGS</string>
-    <string name="acc">Choose Your Account</string>
+    <string name="acc">Bring a Life, Back to Power</string>
     <string name="donor">Blood Donor</string>
     <string name="patient">Patient</string>
     <string name="banks">Blood Bank</string>
@@ -12,5 +12,6 @@
     <string name="forgot_pw">FORGOT PASSWORD?</string>
     <string name="create_acc">Create an Account</string>
     <string name="signup">SIGNUP</string>
+    <string name="welcome">..WELCOME..</string>
 
 </resources>
