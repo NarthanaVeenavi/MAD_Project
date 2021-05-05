@@ -109,7 +109,7 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
         sqLiteDatabase.insert(DatabaseHelperClass.TABLE_NAME2, null,contentValue);
     }
 
-    /*public List<EmergencyNoticesModelClass> getEmergencyNoticesList(){
+    public List<EmergencyNoticesModelClass> getEmergencyNoticesList(){
         String sql = " select * from " + TABLE_NAME2;
         sqLiteDatabase = this.getReadableDatabase();
         List<EmergencyNoticesModelClass> storeEmergencyNotices = new ArrayList<>();
@@ -131,6 +131,31 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
 
     }
 
+    /*public List<BloodBankDetailsModelClass> getBloodBanksList(){
+        String sql = " select blood_bank_name, address, phone_number, district, city, postal_code from " + TABLE_NAME;
+        sqLiteDatabase = this.getReadableDatabase();
+        List<BloodBankDetailsModelClass> storeBloodBanks = new ArrayList<>();
+
+        //We can retrieve anything from database using an object of the Cursor class
+        Cursor cursor = sqLiteDatabase.rawQuery(sql, null);
+        if(cursor.moveToFirst()) {
+            do {
+                String blood_bank_name = cursor.getString(2);
+                String address = cursor.getString(3);
+                String phone = cursor.getString(4);
+                String district = cursor.getString(5);
+                String city = cursor.getString(6);
+                String postal_code = cursor.getString(7);
+                storeBloodBanks.add(new BloodBankDetailsModelClass(blood_bank_name, address, phone, district, city, postal_code));
+
+            } while (cursor.moveToNext());
+
+        }
+        cursor.close();
+        return storeBloodBanks;
+
+    }*/
+
     public void updateEmergencyNotices(EmergencyNoticesModelClass emergencyNoticesModelClass){
         ContentValues contentValues = new ContentValues();
         contentValues.put(DatabaseHelperClass.HOSPITAL_NAME,emergencyNoticesModelClass.getHos_name());
@@ -143,6 +168,6 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
     public void deleteEmergencyNotices(int id){
         sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.delete(TABLE_NAME2, ID1 + " = ? ", new String[]{String.valueOf(id)});
-    }*/
+    }
 
 }

@@ -12,6 +12,15 @@ public class BloodBankDetailsModelClass {
     String username;
     String rePassword;
 
+    public BloodBankDetailsModelClass(String bloodBankName, String address, String phone_number, String district, String city, String postalCode) {
+        this.bloodBankName = bloodBankName;
+        this.address = address;
+        this.phone_number = phone_number;
+        this.district = district;
+        this.city = city;
+        this.postalCode = postalCode;
+    }
+
     public BloodBankDetailsModelClass(String bloodBankName, String address, String phone_number, String district, String city, String postalCode, String username, String rePassword) {
         this.bloodBankName = bloodBankName;
         this.address = address;

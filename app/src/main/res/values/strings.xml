@@ -55,5 +55,6 @@
     <string name="bloodBank">BLOOD BANK</string>
     <string name="view_notices">VIEW EMERGENCY NOTICES</string>
     <string name="create_account">Do not have an account?</string>
+    <string name="view_blood_banks">BLOOD BANKS</string>
 
 </resources>

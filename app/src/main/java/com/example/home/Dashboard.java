@@ -54,8 +54,8 @@ public class Dashboard extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent= new Intent(Dashboard.this,View_Emergency_Notices.class);
-                startActivity(intent);*/
+                Intent intent= new Intent(Dashboard.this,View_Emergency_Notices.class);
+                startActivity(intent);
             }
         });
     }

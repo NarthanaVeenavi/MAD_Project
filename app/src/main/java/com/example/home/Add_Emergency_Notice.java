@@ -40,8 +40,8 @@ public class Add_Emergency_Notice extends AppCompatActivity {
                     databaseHelperClass.addEmergencyNotice(emergencyNoticesModelClass);
                     Toast.makeText(Add_Emergency_Notice.this, "Added Emergency Notice Successfully", Toast.LENGTH_SHORT).show();
                     finish();
-                    //Intent intent= new Intent(Add_Emergency_Notice.this,View_Emergency_Notices.class);
-                    //startActivity(intent);
+                    Intent intent= new Intent(Add_Emergency_Notice.this,View_Emergency_Notices.class);
+                    startActivity(intent);
                 }
             }
         });

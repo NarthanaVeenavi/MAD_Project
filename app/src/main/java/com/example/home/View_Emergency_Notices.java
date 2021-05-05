@@ -1,4 +1,3 @@
-/*
 package com.example.home;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,4 +31,4 @@ public class View_Emergency_Notices extends AppCompatActivity {
         }else{
             Toast.makeText(this, "There is no emergency Notices ", Toast.LENGTH_SHORT).show();        }
     }
-}*/
+}
