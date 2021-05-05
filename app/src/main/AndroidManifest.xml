@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Home">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".PatientHome"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoadingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -14,4 +14,10 @@
     <string name="signup">SIGNUP</string>
     <string name="welcome">..WELCOME..</string>
 
+    <string name="goBtn"><![CDATA[>]]></string>
+    <string name="req">Requests</string>
+    <string name="res">Donor Responses</string>
+    <string name="reqViewDes">View your requests, here!</string>
+    <string name="resViewDes">View the responses you have got, here!</string>
+
 </resources>
