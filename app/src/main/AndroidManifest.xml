@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Home">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".View_Blood_Test"></activity>
+        <activity android:name=".Add_Blood_Banks" />
+        <activity android:name=".View_Emergency_Notices_cus" />
+        <activity android:name=".View_Emergency_Notices" />
+        <activity android:name=".Login" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Add_Emergency_Notice" />
+        <activity android:name=".Add_Blood_Test" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoadingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

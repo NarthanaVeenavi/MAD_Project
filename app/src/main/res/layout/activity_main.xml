@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_blood_bank"
         android:layout_width="147dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/white_2"
@@ -39,7 +39,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="224dp"
         android:fontFamily="sans-serif-thin"
         android:text="@string/acc"
         android:textColor="@color/red_123"
@@ -112,7 +112,7 @@
         app:srcCompat="@mipmap/img6_foreground" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_donor"
         android:layout_width="147dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/white_2"
@@ -126,7 +126,7 @@
         app:layout_constraintVertical_bias="0.613" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_patient"
         android:layout_width="147dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/white"
@@ -140,7 +140,7 @@
         app:layout_constraintVertical_bias="0.612" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_organization"
         android:layout_width="166dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/white_2"
