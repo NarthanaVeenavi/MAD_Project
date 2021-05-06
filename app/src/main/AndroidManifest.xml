@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Home">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".organizaion_page"></activity>
+        <activity android:name=".viewCampDetails" />
+        <activity android:name=".Add_Camp" />
+        <activity android:name=".redwings_login" />
+        <activity android:name=".organization_home" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoadingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

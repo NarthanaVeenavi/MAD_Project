@@ -13,5 +13,18 @@
     <string name="create_acc">Create an Account</string>
     <string name="signup">SIGNUP</string>
     <string name="welcome">..WELCOME..</string>
+    <string name="blood_donation_camp">BLOOD DONATION CAMPAIGN</string>
+    <string name="add_blood_camp">ADD BLOOD CAMPAIGN</string>
+    <string name="view_organization_details">VIEW ORGANIZATION DETAILS</string>
+    <string name="view_blood_camp_details">VIEW BLOOD CAMP DETAILS</string>
+    <string name="add_camp_details">ADD DONATION CAMP DETAILS</string>
+    <string name="org_name">Organization Name</string>
+    <string name="org_phone">Phone Number</string>
+    <string name="org_date">Date</string>
+    <string name="org_time">Time</string>
+    <string name="org_save">SAVE DETAILS</string>
+    <string name="view_details">VIEW BLOOD CAMP DETAILS</string>
+    <string name="update_camp">UPDATE BLOOD CAMP DETAILS</string>
+    <string name="add_newcamp">ADD NEW BLOOD CAMP</string>
 
 </resources>
