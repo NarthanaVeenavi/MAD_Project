@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:focusableInTouchMode="true"
     android:layout_height="match_parent"
     android:background="@drawable/background1"
+    android:focusableInTouchMode="true"
     tools:context=".View_Blood_Banks">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="417dp"
-        android:layout_height="65dp"
+        android:layout_width="424dp"
+        android:layout_height="74dp"
         android:background="@color/red_dark"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -36,12 +36,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerView_two"
         android:layout_height="match_parent"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:id="@+id/textView6"

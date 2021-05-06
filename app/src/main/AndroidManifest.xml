@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Home">
-        <activity android:name=".View_Blood_Banks"></activity>
+        <activity android:name=".Cus_View"></activity>
+        <activity android:name=".View_Blood_Banks" />
         <activity android:name=".View_Blood_Test" />
         <activity android:name=".Add_Blood_Banks" />
         <activity android:name=".View_Emergency_Notices_cus" />

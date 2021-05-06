@@ -131,8 +131,8 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
 
     }
 
-    /*public List<BloodBankDetailsModelClass> getBloodBanksList(){
-        String sql = " select blood_bank_name, address, phone_number, district, city, postal_code from " + TABLE_NAME;
+    public List<BloodBankDetailsModelClass> getBloodBanksList(){
+        String sql = " select * from " + TABLE_NAME;
         sqLiteDatabase = this.getReadableDatabase();
         List<BloodBankDetailsModelClass> storeBloodBanks = new ArrayList<>();
 
@@ -140,12 +140,12 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
         Cursor cursor = sqLiteDatabase.rawQuery(sql, null);
         if(cursor.moveToFirst()) {
             do {
-                String blood_bank_name = cursor.getString(2);
-                String address = cursor.getString(3);
-                String phone = cursor.getString(4);
-                String district = cursor.getString(5);
-                String city = cursor.getString(6);
-                String postal_code = cursor.getString(7);
+                String blood_bank_name = cursor.getString(1);
+                String address = cursor.getString(2);
+                String phone = cursor.getString(3);
+                String district = cursor.getString(4);
+                String city = cursor.getString(5);
+                String postal_code = cursor.getString(6);
                 storeBloodBanks.add(new BloodBankDetailsModelClass(blood_bank_name, address, phone, district, city, postal_code));
 
             } while (cursor.moveToNext());
@@ -154,7 +154,7 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
         cursor.close();
         return storeBloodBanks;
 
-    }*/
+    }
 
     public void updateEmergencyNotices(EmergencyNoticesModelClass emergencyNoticesModelClass){
         ContentValues contentValues = new ContentValues();

@@ -69,17 +69,11 @@
         android:textColor="@color/black"
         android:textSize="14dp"
         android:textStyle="normal" />
-
-    <LinearLayout
-        android:layout_margin="5dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <View
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_margin="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="25dp"
         android:background="@color/red_dark" />
 
 </LinearLayout>

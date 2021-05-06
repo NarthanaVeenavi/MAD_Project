@@ -5,28 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background1"
-    tools:context=".Dashboard">
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="299dp"
-        android:layout_height="54dp"
-        android:text="@string/view_notices"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
-        app:backgroundTint="@color/red_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+    tools:context=".Cus_View">
 
     <Button
         android:id="@+id/button7"
         android:layout_width="299dp"
         android:layout_height="54dp"
-        android:text="@string/add_notice"
+        android:text="@string/bloodTests"
         android:textSize="16sp"
         android:textStyle="normal|bold"
         app:backgroundTint="@color/red_dark"
@@ -36,6 +21,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.716" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:text="@string/skip"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        app:backgroundTint="@color/red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -94,7 +94,7 @@
         android:id="@+id/button_blood_banks"
         android:layout_width="299dp"
         android:layout_height="53dp"
-        android:text="@string/add_Bl_tst"
+        android:text="@string/bloodbanks"
         android:textSize="18sp"
         android:textStyle="bold"
         app:backgroundTint="@color/red_dark"
@@ -108,7 +108,7 @@
         android:id="@+id/button_blood_bank"
         android:layout_width="299dp"
         android:layout_height="54dp"
-        android:text="@string/view_details_cus"
+        android:text="@string/emergencyNotices"
         android:textSize="16sp"
         android:textStyle="normal|bold"
         app:backgroundTint="@color/red_dark"
@@ -121,15 +121,15 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="236dp"
-        android:layout_height="209dp"
+        android:layout_width="192dp"
+        android:layout_height="190dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141"
-        app:srcCompat="@drawable/img9" />
+        app:layout_constraintVertical_bias="0.168"
+        app:srcCompat="@drawable/img272" />
 
     <ImageView
         android:id="@+id/imageView18"

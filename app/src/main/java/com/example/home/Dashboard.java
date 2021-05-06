@@ -19,7 +19,7 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        button2 = (Button) findViewById(R.id.button_patient);
+        button2 = (Button) findViewById(R.id.button_blood_banks);
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override

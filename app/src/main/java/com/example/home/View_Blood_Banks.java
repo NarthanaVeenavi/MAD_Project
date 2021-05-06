@@ -17,7 +17,7 @@ public class View_Blood_Banks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view__blood__banks);
 
-        /*recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView_two);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
@@ -29,6 +29,6 @@ public class View_Blood_Banks extends AppCompatActivity {
             recyclerView.setAdapter(bloodBanksAdapterClass);
 
         }else{
-            Toast.makeText(this, "There is no Blood Banks ", Toast.LENGTH_SHORT).show();        }*/
+            Toast.makeText(this, "There is no Blood Banks ", Toast.LENGTH_SHORT).show();        }
     }
 }
