@@ -13,5 +13,11 @@
     <string name="create_acc">Create an Account</string>
     <string name="signup">SIGNUP</string>
     <string name="welcome">..WELCOME..</string>
+    <string name="date">Date</string>
+    <string name="venue">Venue</string>
+    <string name="entry">Health Entry Type</string>
+    <string name="title">Entry Title</string>
+    <string name="description">Description</string>
+
 
 </resources>

@@ -112,7 +112,7 @@
         app:srcCompat="@mipmap/img6_foreground" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_donor"
         android:layout_width="147dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/white_2"
