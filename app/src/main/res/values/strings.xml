@@ -60,5 +60,6 @@
     <string name="emergencyNotices">Emergency Notices</string>
     <string name="bloodTests">BLOOD TESTS</string>
     <string name="skip">SKIP</string>
+    <string name="blood_tests">Blood Tests</string>
 
 </resources>

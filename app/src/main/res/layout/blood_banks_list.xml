@@ -3,12 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="wrap_content"
-    android:background="@color/white">
+    android:layout_height="125dp"
+    android:background="@color/grey_123">
 
     <TextView
         android:id="@+id/text_name"
-        android:layout_width="246dp"
+        android:layout_width="242dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:text="blood bank name"

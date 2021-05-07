@@ -17,7 +17,7 @@ public class Cus_View extends AppCompatActivity {
         setContentView(R.layout.activity_cus__view);
 
         skip = findViewById(R.id.button);
-        blood_banks = findViewById(R.id.button_blood_banks);
+        blood_banks = findViewById(R.id.button_blood_tests);
 
         skip.setOnClickListener(new View.OnClickListener() {
             @Override

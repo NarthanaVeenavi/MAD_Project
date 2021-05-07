@@ -1,5 +1,7 @@
 package com.example.home;
 
+import java.io.Serializable;
+
 public class BloodBankDetailsModelClass {
 
     Integer id;

@@ -20,6 +20,7 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
     //Database table name
     private static final String TABLE_NAME = "BLOOD_BANKS_DETAILS";
     private static final String TABLE_NAME2 = "EMERGENCY_NOTICES";
+    private static final String TABLE_NAME3 = "BLOOD_TESTS";
 
     //Table columns
     public static final String ID = "id";
@@ -38,12 +39,21 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
     public static final String PHONE_NUM = "phone";
     public static final String DESCRIPTION = "description";
 
+    public static final String ID2 = "id2";
+    public static final String HOS_NAME = "hos_name";
+    public static final String DATE = "date";
+    public static final String TIME = "time";
+    public static final String PHONE = "phone";
+    public static final String BLOOD_TEST = "blood_tests";
+
     //creating table query
 
     private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME +"( " + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + BLOOD_BANK_NAME + " TEXT NOT NULL," + ADDRESS + " TEXT NOT NULL, "+
             PHONE_NUMBER + " TEXT NOT NULL, " + DISTRICT + " TEXT NOT NULL, " + CITY + " TEXT NOT NULL, " + POSTAL_CODE + " TEXT NOT NULL, " + USERNAME + " TEXT NOT NULL, " + PASSWORD + " TEXT NOT NULL)";
 
     private static final String CREATE_TABLE2 = " CREATE TABLE " + TABLE_NAME2 + "( " + ID1 + " INTEGER PRIMARY KEY AUTOINCREMENT, " + HOSPITAL_NAME + " TEXT NOT NULL, " + PHONE_NUM + " TEXT NOT NULL, " + DESCRIPTION + " TEXT NOT NULL)";
+
+    private static final String CREATE_TABLE3 = " CREATE TABLE " + TABLE_NAME3 + "( " + ID2 + " INTEGER PRIMARY KEY AUTOINCREMENT, " + HOS_NAME + " TEXT NOT NULL, " + DATE + " TEXT NOT NULL, " + TIME + " TEXT NOT NULL, " + PHONE + " TEXT NOT NULL, " + BLOOD_TEST + " TEXT NOT NULL)";
 
     public DatabaseHelperClass(Context context){
         super(context,DATABASE_NAME,null, DATABASE_VERSION);
@@ -54,12 +64,14 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
 
         db.execSQL(CREATE_TABLE);
         db.execSQL(CREATE_TABLE2);
+        db.execSQL(CREATE_TABLE3);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(" DROP TABLE IF EXISTS " + TABLE_NAME);
         db.execSQL(" DROP TABLE IF EXISTS " + TABLE_NAME2);
+        db.execSQL(" DROP TABLE IF EXISTS " + TABLE_NAME3);
         onCreate(db);
     }
 
@@ -78,6 +90,17 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
         sqLiteDatabase.insert(DatabaseHelperClass.TABLE_NAME, null,contentValues);
     }
 
+    public void addBloodTests(BloodTestsModelClass bloodTestsModelClass){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DatabaseHelperClass.HOS_NAME, bloodTestsModelClass.getHos_name());
+        contentValues.put(DatabaseHelperClass.DATE, bloodTestsModelClass.getDate());
+        contentValues.put(DatabaseHelperClass.TIME, bloodTestsModelClass.getTime());
+        contentValues.put(DatabaseHelperClass.PHONE, bloodTestsModelClass.getPhone());
+        contentValues.put(DatabaseHelperClass.BLOOD_TEST, bloodTestsModelClass.getBlood_tests());
+        sqLiteDatabase = this.getWritableDatabase();
+        sqLiteDatabase.insert(DatabaseHelperClass.TABLE_NAME3, null, contentValues);
+    }
+
     public Boolean checkUserName(String USERNAME){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("select * from BLOOD_BANKS_DETAILS where user_name = ?", new String[] { USERNAME });
@@ -92,7 +115,9 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
     public Boolean checkUsernamePassword(String USERNAME, String PASSWORD){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("select * from BLOOD_BANKS_DETAILS where user_name = ? and password = ?", new String[] { USERNAME, PASSWORD });
+
         if(cursor.getCount()>0){
+
             return true;
         }
         else{

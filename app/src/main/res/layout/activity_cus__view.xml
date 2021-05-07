@@ -91,7 +91,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <Button
-        android:id="@+id/button_blood_banks"
+        android:id="@+id/button_blood_tests"
         android:layout_width="299dp"
         android:layout_height="53dp"
         android:text="@string/bloodbanks"
