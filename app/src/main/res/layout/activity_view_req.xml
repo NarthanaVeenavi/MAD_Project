@@ -65,7 +65,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="48dp"
         android:textSize="22sp"
-        app:layout_constraintStart_toEndOf="@+id/lblNic"
+        app:layout_constraintStart_toEndOf="@+id/lblBldgrp"
         app:layout_constraintTop_toTopOf="@+id/cardDetails" />
 
     <TextView
@@ -140,7 +140,7 @@
         android:text="@string/reqTyp"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblNic" />
+        app:layout_constraintTop_toBottomOf="@+id/lblBldgrp" />
 
     <TextView
         android:id="@+id/lblDate"
@@ -154,7 +154,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lblReqTyp" />
 
     <TextView
-        android:id="@+id/lblNic"
+        android:id="@+id/lblBldgrp"
         android:layout_width="138dp"
         android:layout_height="32dp"
         android:layout_marginStart="48dp"

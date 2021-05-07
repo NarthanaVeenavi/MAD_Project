@@ -25,7 +25,7 @@
         android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/lblNic"
+        app:layout_constraintStart_toEndOf="@+id/lblBldgrp"
         app:layout_constraintTop_toBottomOf="@+id/subHead" />
 
     <EditText
@@ -123,7 +123,7 @@
         app:layout_constraintVertical_bias="0.07" />
 
     <TextView
-        android:id="@+id/lblNic"
+        android:id="@+id/lblBldgrp"
         android:layout_width="138dp"
         android:layout_height="32dp"
         android:text="@string/nic"

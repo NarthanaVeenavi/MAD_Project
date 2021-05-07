@@ -7,12 +7,35 @@
     tools:context=".newReq">
 
     <EditText
+        android:id="@+id/edtPhne"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="236dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/lblBldgrp"
+        app:layout_constraintTop_toBottomOf="@+id/subHead" />
+
+    <TextView
+        android:id="@+id/lblPhne"
+        android:layout_width="138dp"
+        android:layout_height="32dp"
+        android:text="@string/phone"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <EditText
         android:id="@+id/edtReqTyp"
         android:layout_width="184dp"
         android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/lblReqTyp"
@@ -23,8 +46,7 @@
         android:layout_width="184dp"
         android:layout_height="45dp"
         android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="128dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/lblDet"
@@ -75,7 +97,7 @@
         app:layout_constraintVertical_bias="0.07" />
 
     <TextView
-        android:id="@+id/lblNic"
+        android:id="@+id/lblBldgrp"
         android:layout_width="138dp"
         android:layout_height="32dp"
         android:text="@string/bldgrp"
@@ -96,10 +118,10 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblNic"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintTop_toBottomOf="@+id/lblBldgrp"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/lblDet"
@@ -112,7 +134,7 @@
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblReqTyp"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintVertical_bias="0.449" />
 
     <Button
         android:id="@+id/btnSubmit"
@@ -130,11 +152,10 @@
         android:layout_width="184dp"
         android:layout_height="45dp"
         android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/lblNic"
+        app:layout_constraintStart_toEndOf="@+id/lblBldgrp"
         app:layout_constraintTop_toBottomOf="@+id/subHead" />
 
 
