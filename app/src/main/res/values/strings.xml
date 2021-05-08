@@ -34,4 +34,8 @@
     <string name="user">Username</string>
     <string name="pw">Password</string>
     <string name="phone">Phone</string>
+
+    <string name="open">Open</string>
+    <string name="name">Name</string>
+
 </resources>

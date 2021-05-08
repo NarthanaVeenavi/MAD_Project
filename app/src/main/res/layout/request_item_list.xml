@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtBldGr"
+        android:textStyle="bold"
+        android:hint="@string/bldgrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/bldgrp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtReqT"
+        android:textStyle="bold"
+        android:hint="@string/reqTyp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/reqTyp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtNm"
+        android:hint="@string/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtPhn"
+        android:hint="@string/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/phone"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtDt"
+        android:hint="@string/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/details"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnEdt"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="2"
+            android:background="@color/red_dark"
+            android:text="@string/edt"
+            app:backgroundTint="@color/grey_123" />
+        <Button
+            android:id="@+id/btnDlt"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@color/red_dark"
+            android:text="@string/dlt"
+            app:backgroundTint="@color/red_dark" />
+    </LinearLayout>
+    <View
+        android:layout_margin="5dp"
+        android:background="@color/white_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>
