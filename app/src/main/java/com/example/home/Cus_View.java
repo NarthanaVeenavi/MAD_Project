@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Cus_View extends AppCompatActivity {
 
-    Button skip, blood_banks;
+    Button skip, blood_banks, emergency_notices;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class Cus_View extends AppCompatActivity {
 
         skip = findViewById(R.id.button);
         blood_banks = findViewById(R.id.button_blood_tests);
+        emergency_notices = findViewById(R.id.button_emergency);
 
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,14 @@ public class Cus_View extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Cus_View.this, View_Blood_Banks.class);
+                startActivity(intent);
+            }
+        });
+
+        emergency_notices.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Cus_View.this, View_Emergency_Notices_cus.class);
                 startActivity(intent);
             }
         });

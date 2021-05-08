@@ -17,7 +17,7 @@ public class View_Blood_Banks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view__blood__banks);
 
-        recyclerView = findViewById(R.id.recyclerView_two);
+        recyclerView = findViewById(R.id.recyclerView_three);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 

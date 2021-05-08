@@ -156,6 +156,32 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
 
     }
 
+    public List<BloodTestsModelClass> getBloodTestsList(){
+        String sql = " select * from " + TABLE_NAME3;
+        sqLiteDatabase = this.getReadableDatabase();
+        List<BloodTestsModelClass> storeBloodTests = new ArrayList<>();
+
+        //We can retrieve anything from database using an object of the Cursor class
+        Cursor cursor = sqLiteDatabase.rawQuery(sql, null);
+        if(cursor.moveToFirst()) {
+            do {
+                int _id = Integer.parseInt(cursor.getString(0));
+                String hos_name = cursor.getString(1);
+                String date = cursor.getString(2);
+                String time = cursor.getString(3);
+                String phone = cursor.getString(4);
+                String tests = cursor.getString(5);
+                storeBloodTests.add(new BloodTestsModelClass(_id,hos_name,date,time, phone,tests));
+            } while (cursor.moveToNext());
+
+        }
+        cursor.close();
+        return storeBloodTests;
+
+    }
+
+
+
     public List<BloodBankDetailsModelClass> getBloodBanksList(){
         String sql = " select * from " + TABLE_NAME;
         sqLiteDatabase = this.getReadableDatabase();
@@ -193,6 +219,22 @@ public class DatabaseHelperClass extends SQLiteOpenHelper{
     public void deleteEmergencyNotices(int id){
         sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.delete(TABLE_NAME2, ID1 + " = ? ", new String[]{String.valueOf(id)});
+    }
+
+    public void updateBloodTests(BloodTestsModelClass bloodTestsModelClass){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DatabaseHelperClass.HOS_NAME,bloodTestsModelClass.getHos_name());
+        contentValues.put(DatabaseHelperClass.DATE,bloodTestsModelClass.getDate());
+        contentValues.put(DatabaseHelperClass.TIME,bloodTestsModelClass.getTime());
+        contentValues.put(DatabaseHelperClass.PHONE,bloodTestsModelClass.getPhone());
+        contentValues.put(DatabaseHelperClass.BLOOD_TEST,bloodTestsModelClass.getBlood_tests());
+        sqLiteDatabase = this.getWritableDatabase();
+        sqLiteDatabase.update(TABLE_NAME3, contentValues, ID2 + " = ? " , new String[] {String.valueOf(bloodTestsModelClass.getId())});
+    }
+
+    public void deleteBloodTests(int id){
+        sqLiteDatabase = this.getWritableDatabase();
+        sqLiteDatabase.delete(TABLE_NAME3, ID2 + " = ? ", new String[]{String.valueOf(id)});
     }
 
 }

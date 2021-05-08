@@ -17,7 +17,7 @@ public class View_Emergency_Notices extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view__emergency__notices);
 
-        recyclerView = findViewById(R.id.recyclerView_two);
+        recyclerView = findViewById(R.id.recyclerView_three);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 

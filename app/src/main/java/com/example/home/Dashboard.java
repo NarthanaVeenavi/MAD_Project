@@ -29,7 +29,7 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-        button3 = (Button) findViewById(R.id.button_blood_bank);
+        button3 = (Button) findViewById(R.id.button_emergency);
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override

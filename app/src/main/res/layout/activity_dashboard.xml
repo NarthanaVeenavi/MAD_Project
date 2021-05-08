@@ -105,7 +105,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_blood_bank"
+        android:id="@+id/button_emergency"
         android:layout_width="299dp"
         android:layout_height="54dp"
         android:text="@string/view_details_cus"

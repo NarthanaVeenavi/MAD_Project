@@ -9,14 +9,6 @@ public class BloodTestsModelClass {
     String phone;
     String blood_tests;
 
-    public BloodTestsModelClass(String hos_name, String date, String time, String phone, String blood_tests) {
-        this.hos_name = hos_name;
-        this.date = date;
-        this.time = time;
-        this.phone = phone;
-        this.blood_tests = blood_tests;
-    }
-
     public BloodTestsModelClass(Integer id, String hos_name, String date, String time, String phone, String blood_tests) {
         this.id = id;
         this.hos_name = hos_name;
@@ -25,6 +17,15 @@ public class BloodTestsModelClass {
         this.phone = phone;
         this.blood_tests = blood_tests;
     }
+
+    public BloodTestsModelClass(String hos_name, String date, String time, String phone, String blood_tests) {
+        this.hos_name = hos_name;
+        this.date = date;
+        this.time = time;
+        this.phone = phone;
+        this.blood_tests = blood_tests;
+    }
+
 
     public Integer getId() {
         return id;

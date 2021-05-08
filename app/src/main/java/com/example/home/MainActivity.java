@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        blood_banks = findViewById(R.id.button_blood_bank);
+        blood_banks = findViewById(R.id.button_emergency);
 
 
         blood_banks.setOnClickListener(new View.OnClickListener() {
