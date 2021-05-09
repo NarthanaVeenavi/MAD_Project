@@ -34,7 +34,11 @@ public class Add_Emergency_Notice extends AppCompatActivity {
 
                 if(stringHosName.length() <= 0 || stringPhoneNum.length() <= 0 || stringDescription.length() <= 0){
                     Toast.makeText(Add_Emergency_Notice.this, "Enter all Data", Toast.LENGTH_SHORT).show();
-                }else{
+                }
+                else if(stringPhoneNum.length() != 10){
+                    Toast.makeText(Add_Emergency_Notice.this, "Phone Number should have only 10 numbers", Toast.LENGTH_SHORT).show();
+                }
+                else{
                     DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(Add_Emergency_Notice.this);
                     EmergencyNoticesModelClass emergencyNoticesModelClass = new EmergencyNoticesModelClass(stringHosName, stringPhoneNum, stringDescription);
                     databaseHelperClass.addEmergencyNotice(emergencyNoticesModelClass);

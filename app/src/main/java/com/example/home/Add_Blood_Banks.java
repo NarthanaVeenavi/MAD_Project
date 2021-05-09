@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class Add_Blood_Banks extends AppCompatActivity {
 
-    Button button1, button2;
+    Button button1;
     EditText blood_bank_name, address, phone_number, district, city, postal_code, username, password, re_password;
     DatabaseHelperClass myDb;
 
@@ -30,7 +30,6 @@ public class Add_Blood_Banks extends AppCompatActivity {
         username = findViewById(R.id.user_name);
         password = findViewById(R.id.password);
         re_password = findViewById(R.id.re_type_password);
-        button2 = findViewById(R.id.button_organization);
         myDb = new DatabaseHelperClass(Add_Blood_Banks.this);
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -47,32 +46,23 @@ public class Add_Blood_Banks extends AppCompatActivity {
                 String strPassword = password.getText().toString();
                 String strRePassword = re_password.getText().toString();
 
-
-                /*if(strBlood_bank_name.length() <=0 || strAddress.length() <=0 || strPhoneNumber.length() <= 0 || strDistrict.length() <= 0 || strCity.length() <= 0 || strPostalCode.length() <= 0 || strUserName.length() <= 0 || strPassword.length() <= 0 || strRePassword.length() <= 0 ){
-                    Toast.makeText(MainActivity.this, "Enter All Data", Toast.LENGTH_SHORT).show();
-                }
-                else if(!strPassword.equals(strRePassword)){
-                    Toast.makeText(MainActivity.this, "The Two Passwords do not match. Enter Again", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(MainActivity.this);
-                    BloodBankDetailsModelClass bloodBankDetailsModelClass = new BloodBankDetailsModelClass(strBlood_bank_name, strAddress, strPhoneNumber, strDistrict, strCity, strPostalCode, strUserName, strRePassword);
-                    databaseHelperClass.addBloodBanks(bloodBankDetailsModelClass);
-                    Toast.makeText(MainActivity.this, "Added blood bank successfully", Toast.LENGTH_SHORT).show();
-                    finish();
-                    Intent intent= new Intent(MainActivity.this,Dashboard.class);
-                    startActivity(intent);
-                    //startActivity(getIntent());
-                }*/
-
-                if(strBlood_bank_name.length() <=0 || strAddress.length() <=0 || strPhoneNumber.length() <= 0 || strDistrict.length() <= 0 || strCity.length() <= 0 || strPostalCode.length() <= 0 || strUserName.length() <= 0 || strPassword.length() <= 0 || strRePassword.length() <= 0 ){
+                if(strBlood_bank_name.length() <=0 || strAddress.length() <=0 ||
+                        strPhoneNumber.length() <= 0 || strDistrict.length() <= 0 || strCity.length() <= 0 || strPostalCode.length() <= 0 ||
+                        strUserName.length() <= 0 || strPassword.length() <= 0 || strRePassword.length() <= 0 ){
                     Toast.makeText(Add_Blood_Banks.this, "Enter All Data", Toast.LENGTH_SHORT).show();
+                }
+                else if(strPhoneNumber.length() != 10){
+                    Toast.makeText(Add_Blood_Banks.this, "Phone Number Should have only 10 numbers", Toast.LENGTH_SHORT).show();
+                }
+                else if(strPostalCode.length() != 5){
+                    Toast.makeText(Add_Blood_Banks.this, "Postal Code Should have only 5 numbers", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     if(strPassword.equals(strRePassword)){
                         Boolean userCheck = myDb.checkUserName(strUserName);
                         if(userCheck == false){
-                            BloodBankDetailsModelClass bloodBankDetailsModelClass = new BloodBankDetailsModelClass(strBlood_bank_name, strAddress, strPhoneNumber, strDistrict, strCity, strPostalCode, strUserName, strRePassword);
+                            BloodBankDetailsModelClass bloodBankDetailsModelClass = new BloodBankDetailsModelClass(strBlood_bank_name,
+                                    strAddress, strPhoneNumber, strDistrict, strCity, strPostalCode, strUserName, strRePassword);
                             myDb.addBloodBanks(bloodBankDetailsModelClass);
                             Toast.makeText(Add_Blood_Banks.this, "Added blood bank successfully", Toast.LENGTH_SHORT).show();
                             finish();
@@ -86,16 +76,8 @@ public class Add_Blood_Banks extends AppCompatActivity {
                     else{
                         Toast.makeText(Add_Blood_Banks.this, "Password not Matching", Toast.LENGTH_SHORT).show();
                     }
+
                 }
-
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent(Add_Blood_Banks.this, Dashboard.class);
-                startActivity(intent);
 
             }
         });

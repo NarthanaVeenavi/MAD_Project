@@ -43,9 +43,9 @@ import java.util.List;
             holder.text_name.setText(bloodBankDetailsModelClass.getBloodBankName());
             holder.text_address.setText(bloodBankDetailsModelClass.getAddress());
             holder.text_phone.setText(bloodBankDetailsModelClass.getPhone_number());
-            holder.text_district.setText(bloodBankDetailsModelClass.getDistrict());
+            //holder.text_district.setText(bloodBankDetailsModelClass.getDistrict());
             holder.text_city.setText(bloodBankDetailsModelClass.getCity());
-            holder.text_postal_code.setText(bloodBankDetailsModelClass.getPostalCode());
+            //holder.text_postal_code.setText(bloodBankDetailsModelClass.getPostalCode());
 
 
         }
@@ -60,9 +60,9 @@ import java.util.List;
             TextView text_name;
             TextView text_address;
             TextView text_phone;
-            TextView text_district;
+            //TextView text_district;
             TextView text_city;
-            TextView text_postal_code;
+            //TextView text_postal_code;
 
 
             public ViewHolder(@NonNull View itemView) {
@@ -71,9 +71,9 @@ import java.util.List;
                 text_name = itemView.findViewById(R.id.text_name);
                 text_address = itemView.findViewById(R.id.text_address);
                 text_phone = itemView.findViewById(R.id.text_phone);
-                text_district = itemView.findViewById(R.id.text_district);
+                //text_district = itemView.findViewById(R.id.text_district);
                 text_city = itemView.findViewById(R.id.text_city);
-                text_postal_code = itemView.findViewById(R.id.text_postal_code);
+                //text_postal_code = itemView.findViewById(R.id.text_postal_code);
 
 
             }

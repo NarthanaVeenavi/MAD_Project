@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="247dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/editText_HosName"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Hos name"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Date : "
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/editText_date"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginBottom="5dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Time: "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/editText_time"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-27dp"
+        android:text="Time"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Phone: "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/editText_phone"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-30dp"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/editText_tests"
+        android:layout_width="389dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textMultiLine"
+        android:text="Blood Tests"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="-200dp"
+        android:background="@android:drawable/btn_star"
+        android:backgroundTint="@color/red_dark" />
+
+
+    <View
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="190dp"
+        android:background="#F4F3F3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:backgroundTint="@color/red_dark"/>
+
+</LinearLayout>

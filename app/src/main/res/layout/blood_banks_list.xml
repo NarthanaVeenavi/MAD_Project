@@ -1,79 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="125dp"
+    android:layout_height="80dp"
     android:background="@color/grey_123">
 
     <TextView
         android:id="@+id/text_name"
-        android:layout_width="242dp"
+        android:layout_width="238dp"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
+        android:fontFamily="serif"
         android:text="blood bank name"
         android:textColor="@color/black"
-        android:textSize="14dp"
+        android:textSize="16dp"
         android:textStyle="normal" />
 
     <TextView
         android:id="@+id/text_address"
-        android:layout_width="385dp"
-        android:layout_height="29dp"
-        android:layout_margin="5dp"
+        android:layout_width="278dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="serif"
         android:text="address"
         android:textColor="@color/black"
-        android:textSize="14dp"
+        android:textSize="16dp"
         android:textStyle="normal" />
 
     <TextView
         android:id="@+id/text_phone"
-        android:layout_width="123dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="-65dp"
+        android:layout_width="116dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-50dp"
+        android:fontFamily="serif"
         android:text="phone"
         android:textColor="@color/black"
-        android:textSize="14dp"
-        android:textStyle="normal" />
-
-    <TextView
-        android:id="@+id/text_district"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="40dp"
-        android:text="district"
-        android:textColor="@color/black"
-        android:textSize="14dp"
+        android:textSize="16dp"
         android:textStyle="normal" />
 
     <TextView
         android:id="@+id/text_city"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="-20dp"
+        android:layout_width="128dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="serif"
         android:text="city"
         android:textColor="@color/black"
-        android:textSize="14dp"
+        android:textSize="16dp"
         android:textStyle="normal" />
 
-    <TextView
-        android:id="@+id/text_postal_code"
-        android:layout_width="132dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="270dp"
-        android:layout_marginTop="-20dp"
-        android:text="postal code"
-        android:textColor="@color/black"
-        android:textSize="14dp"
-        android:textStyle="normal" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="-45dp"
+        android:background="@color/red_123"
+        app:srcCompat="@android:drawable/btn_star" />
+
     <View
-        android:layout_width="match_parent"
+        android:layout_width="410dp"
         android:layout_height="2dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="38dp"
         android:background="@color/red_dark" />
 
 </LinearLayout>

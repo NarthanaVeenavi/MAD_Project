@@ -38,6 +38,9 @@ public class Add_Blood_Test extends AppCompatActivity {
                 if(strHosName.length() <= 0 || strDate.length() <= 0 || strTime.length() <= 0 || strPhone.length() <= 0 || strBloodTests.length() <= 0){
                     Toast.makeText(Add_Blood_Test.this, "Enter all data", Toast.LENGTH_SHORT).show();
                 }
+                else if(strPhone.length() != 10){
+                    Toast.makeText(Add_Blood_Test.this, "Phone Number should have only 10 numbers", Toast.LENGTH_SHORT).show();
+                }
                 else{
                     DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(Add_Blood_Test.this);
                     BloodTestsModelClass bloodTestsModelClass = new BloodTestsModelClass(strHosName, strDate, strTime, strPhone, strBloodTests);

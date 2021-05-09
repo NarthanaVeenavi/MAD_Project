@@ -61,7 +61,7 @@
         android:layout_height="78dp"
         android:ems="10"
         android:hint="@string/postal_code"
-        android:inputType="textPersonName"
+        android:inputType="number|textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/user_name"
         app:layout_constraintTop_toTopOf="parent"
@@ -112,7 +112,7 @@
         android:layout_height="69dp"
         android:ems="10"
         android:hint="@string/ph_num"
-        android:inputType="textPostalAddress"
+        android:inputType="textPostalAddress|phone|textEmailSubject"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/district"
         app:layout_constraintTop_toTopOf="parent"
@@ -194,15 +194,5 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.978" />
 
-    <Button
-        android:id="@+id/button_organization"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.975" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

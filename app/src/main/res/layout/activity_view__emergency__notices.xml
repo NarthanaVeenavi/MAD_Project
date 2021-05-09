@@ -38,10 +38,10 @@
         android:layout_width="match_parent"
         android:id="@+id/recyclerView_three"
         android:layout_height="match_parent"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:id="@+id/textView6"
