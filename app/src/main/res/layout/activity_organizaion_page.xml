@@ -20,41 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/searchIcon"
-        android:layout_width="38dp"
-        android:layout_height="33dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:drawable/ic_search_category_default" />
-
-    <ImageView
-        android:id="@+id/BellIcon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@android:drawable/ic_popup_reminder" />
-
-    <ImageView
-        android:id="@+id/navMenuBar"
-        android:layout_width="42dp"
-        android:layout_height="43dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.018"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     <TextView
         android:id="@+id/textView"
@@ -66,14 +31,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="296dp"
-        android:layout_height="80dp"
+        android:layout_width="290dp"
+        android:layout_height="68dp"
         android:text="@string/add_newcamp"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -81,15 +47,15 @@
         app:backgroundTint="@color/red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.596" />
+        app:layout_constraintVertical_bias="0.562" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="296dp"
-        android:layout_height="78dp"
+        android:layout_width="290dp"
+        android:layout_height="68dp"
         android:text="@string/update_camp"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -97,10 +63,26 @@
         app:backgroundTint="@color/red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="290dp"
+        android:layout_height="68dp"
+        android:text="HOME"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        app:backgroundTint="@color/red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
 
     <ImageView
         android:id="@+id/imageView2"

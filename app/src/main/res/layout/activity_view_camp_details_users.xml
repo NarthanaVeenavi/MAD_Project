@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image5"
     android:focusableInTouchMode="true"
-    tools:context=".viewCampDetails">
-
+    tools:context=".viewCampDetailsUsers">
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/recyclerView"
         android:layout_marginRight="10dp"
         android:layout_marginTop="90dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginBottom="10dp"/>
 
     <androidx.appcompat.widget.Toolbar
@@ -46,6 +44,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.023" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Home">
-        <activity android:name=".organizaion_page"></activity>
+        <activity android:name=".ResetActivity"></activity>
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".viewOrganizationDetails" />
+        <activity android:name=".viewCampDetailsUsers" />
+        <activity android:name=".reg_org" />
+        <activity android:name=".organizaion_page" />
         <activity android:name=".viewCampDetails" />
         <activity android:name=".Add_Camp" />
         <activity android:name=".redwings_login" />

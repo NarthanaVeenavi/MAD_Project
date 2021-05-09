@@ -44,7 +44,7 @@ public class CampAdapterClass extends  RecyclerView.Adapter<CampAdapterClass.Vie
             holder.textViewID.setText(Integer.toString(campModelClass.getId()));
             holder.editText_Name.setText(campModelClass.getName());
             holder.editText_Phone.setText(campModelClass.getPhone());
-            holder.editText_Date.setText(campModelClass.getPhone());
+            holder.editText_Date.setText(campModelClass.getDate());
             holder.editText_Time.setText(campModelClass.getTime());
             holder.editText_Venue.setText(campModelClass.getVenue());
             holder.editText_Description.setText(campModelClass.getDescription());

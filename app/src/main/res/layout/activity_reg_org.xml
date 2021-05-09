@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".reg_org">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/dark_red"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="253dp"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="77dp"
+        android:text="ORGANIZATION REGISTER"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <EditText
+        android:id="@+id/org_name1"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/org_name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        />
+
+    <EditText
+        android:id="@+id/org_address2"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_below="@+id/org_name1"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+         />
+
+    <EditText
+        android:id="@+id/org_phonenumber3"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="phone Number"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_below="@+id/org_address2"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+       />
+
+    <EditText
+        android:id="@+id/org_district4"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="District"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_below="@+id/org_phonenumber3"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+         />
+
+    <EditText
+        android:id="@+id/org_city5"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_below="@+id/org_district4"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        />
+
+    <EditText
+        android:id="@+id/org_postalcode6"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Postal Code"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_below="@+id/org_city5"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        />
+
+    <EditText
+        android:id="@+id/org_username7"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_below="@+id/org_postalcode6"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        />
+
+    <EditText
+        android:id="@+id/org_password8"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_below="@+id/org_username7"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+         />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_below="@+id/org_password8"
+        android:layout_marginTop="34dp"
+        android:background="@color/dark_red"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/dark_red" />
+
+
+</RelativeLayout>

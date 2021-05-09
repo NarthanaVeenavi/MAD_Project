@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/textView18"
+        app:srcCompat="@drawable/blood_2"
+
+        />
+
+
+    <TextView
+        android:id="@+id/editText_id"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:text="Id"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_id2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:text="OrganizaionName:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_name"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="0dp"
+        android:text="OrganizationName"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_id3"
+        android:layout_width="155dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="PhoneNumber :"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_phone"
+        android:layout_width="214dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-40dp"
+        android:text="PhoneNumber"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_id4"
+        android:layout_width="155dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Date :"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_date"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="0dp"
+        android:text="Date"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_id6"
+        android:layout_width="155dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Time :"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_time"
+        android:layout_width="214dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginRight="0dp"
+        android:text="Time"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_id7"
+        android:layout_width="155dp"
+        android:layout_height="39dp"
+        android:layout_margin="5dp"
+        android:text="Veue :"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_venue"
+        android:layout_width="212dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="0dp"
+        android:text="Venue"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_id8"
+        android:layout_width="155dp"
+        android:layout_height="39dp"
+        android:layout_margin="5dp"
+        android:text="Description :"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText_description"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="0dp"
+        android:text="Description"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <View
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/red_dark"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+</LinearLayout>

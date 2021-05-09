@@ -35,8 +35,8 @@ public class organization_home extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent2 = new Intent(organization_home.this, view_campdetails_userif.class);
-                //startActivity(intent2);
+                Intent intent2 = new Intent(organization_home.this, viewOrganizationDetails.class);
+                startActivity(intent2);
             }
         });
 
@@ -45,8 +45,8 @@ public class organization_home extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent3 = new Intent(organization_home.this, view_org_details.class);
-                //startActivity(intent3);
+                Intent intent3 = new Intent(organization_home.this, viewCampDetailsUsers.class);
+                startActivity(intent3);
             }
         });
     }

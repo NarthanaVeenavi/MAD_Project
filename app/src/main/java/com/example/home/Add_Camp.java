@@ -2,6 +2,7 @@ package com.example.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +41,7 @@ public class Add_Camp extends AppCompatActivity {
                 String stringDate = editText_date.getText().toString();
                 String stringTime = editText_time.getText().toString();
                 String stringVenue = editText_venue.getText().toString();
-                String stringDescription = editText_orgname.getText().toString();
+                String stringDescription = editText_description.getText().toString();
 
                 if(stringName.length() <= 0 || stringPhone.length() <= 0 || stringDate.length() <= 0 || stringTime.length() <= 0 || stringVenue.length() <= 0 ||stringDescription.length() <= 0 )
                 {
@@ -52,7 +53,8 @@ public class Add_Camp extends AppCompatActivity {
                     databaseHelperClass.addCamp(campModelClass);
                     Toast.makeText(Add_Camp.this, "Add Camp Details Successfully", Toast.LENGTH_SHORT).show();
                     finish();
-                    startActivity(getIntent());
+                    Intent intent = new Intent(Add_Camp.this, organizaion_page.class);
+                    startActivity(intent);
                 }
 
             }

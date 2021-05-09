@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image5"
-    android:focusableInTouchMode="true"
-    tools:context=".viewCampDetails">
+    tools:context=".viewOrganizationDetails"
+    android:focusableInTouchMode="true">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -32,11 +31,13 @@
 
 
 
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="278dp"
         android:layout_height="31dp"
-        android:text="@string/view_details"
+        android:text="@string/view_organization_details"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -46,6 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.023" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

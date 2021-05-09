@@ -11,6 +11,7 @@ public class organizaion_page extends AppCompatActivity {
 
     public  Button button1;
     public  Button button2;
+    public  Button button3;
 
 
     @Override
@@ -35,6 +36,16 @@ public class organizaion_page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent2 = new Intent(organizaion_page.this,  viewCampDetails.class );
                 startActivity(intent2);
+            }
+        });
+
+        button3 = (Button) findViewById(R.id.button3);
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(organizaion_page.this,  organization_home.class );
+                startActivity(intent3);
             }
         });
 
