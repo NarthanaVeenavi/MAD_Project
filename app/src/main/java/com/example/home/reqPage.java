@@ -28,7 +28,7 @@ public class reqPage extends AppCompatActivity {
             RequestAdapterClass requestAdapterClass = new RequestAdapterClass(requestModelClasses, reqPage.this);
             recyclerView.setAdapter(requestAdapterClass);
         }else{
-            Toast.makeText(this, "There are no requests yet!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "There are no requests yet!", Toast.LENGTH_LONG).show();
         }
     }
 }

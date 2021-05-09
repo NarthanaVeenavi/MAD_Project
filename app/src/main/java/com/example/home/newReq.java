@@ -40,7 +40,7 @@ public class newReq extends AppCompatActivity {
                     DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(newReq.this);
                     RequestModelClass requestModelClass = new RequestModelClass(stringBld,stringTyp,stringName,stringPhne,stringDet);
                     databaseHelperClass.addRequest(requestModelClass);
-                    Toast.makeText(newReq.this, "Request Created!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(newReq.this, "Request Created!", Toast.LENGTH_LONG).show();
 
                     finish();
                     startActivity(getIntent());
