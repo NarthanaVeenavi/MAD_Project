@@ -141,16 +141,15 @@
         android:id="@+id/org_password8"
         android:layout_width="358dp"
         android:layout_height="47dp"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPersonName"
-        android:textSize="20sp"
         android:layout_below="@+id/org_username7"
-        android:layout_marginTop="20dp"
         android:layout_alignParentRight="true"
         android:layout_gravity="right"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
-         />
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName|textPassword"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button_register"

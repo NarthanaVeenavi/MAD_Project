@@ -59,7 +59,8 @@ public class CampAdapterClass extends  RecyclerView.Adapter<CampAdapterClass.Vie
                     String stringVenue = holder.editText_Venue.getText().toString();
                     String stringDescription = holder.editText_Description.getText().toString();
 
-                    databaseHelperClass.updateCamp(new CampModelClass(campModelClass.getId(),stringName,stringPhone,stringDate,stringTime,stringVenue,stringDescription));
+                    databaseHelperClass.updateCamp(new CampModelClass(campModelClass.getId(),stringName,
+                            stringPhone,stringDate,stringTime,stringVenue,stringDescription));
                     notifyDataSetChanged();
                     ((Activity) context).finish();
                     context.startActivity(((Activity) context).getIntent());

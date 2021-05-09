@@ -43,9 +43,13 @@ public class Add_Camp extends AppCompatActivity {
                 String stringVenue = editText_venue.getText().toString();
                 String stringDescription = editText_description.getText().toString();
 
-                if(stringName.length() <= 0 || stringPhone.length() <= 0 || stringDate.length() <= 0 || stringTime.length() <= 0 || stringVenue.length() <= 0 ||stringDescription.length() <= 0 )
+                if(stringName.length() <= 0 || stringPhone.length() <= 0 || stringDate.length() <= 0 ||
+                        stringTime.length() <= 0 || stringVenue.length() <= 0 ||stringDescription.length() <= 0 )
                 {
                     Toast.makeText(Add_Camp.this, "Enter All Data", Toast.LENGTH_SHORT).show();
+                }
+                else if(stringPhone.length() != 10){
+                    Toast.makeText(Add_Camp.this, "Phone Number should have only 10 numbers", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(Add_Camp.this);

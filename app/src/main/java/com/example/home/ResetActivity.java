@@ -40,9 +40,6 @@ public class ResetActivity extends AppCompatActivity {
                 String pass = password.toString();
                 String newpass = confirmpassword.toString();
 
-
-
-
                     Boolean updateusernamepassword = DB.updateusernamepassword(user, pass);
 
                     if (updateusernamepassword == true) {

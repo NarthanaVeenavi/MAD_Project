@@ -46,6 +46,9 @@ public class reg_org extends AppCompatActivity {
                 {
                     Toast.makeText(reg_org.this, "Enter All Data", Toast.LENGTH_SHORT).show();
                 }
+                else if(stringPhonenumber.length() != 10){
+                    Toast.makeText(reg_org.this, "Phone Number should have only 10 numbers", Toast.LENGTH_SHORT).show();
+                }
                 else{
                     DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(reg_org.this);
                     OrganizationModelClass organizationModelClass = new OrganizationModelClass(stringOrgname,stringAddress,stringPhonenumber,stringDistrict,stringCity,stringPostalcode,stringUsername,stringPassword);

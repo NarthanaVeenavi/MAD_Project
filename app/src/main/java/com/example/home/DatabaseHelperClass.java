@@ -154,14 +154,10 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("select * from ORGANIZATION where username = ?", new String[] { username });
         if(cursor.getCount()>0){
-
             return true;
-
         }
         else {
-
             return false;
-
         }
 
     }
