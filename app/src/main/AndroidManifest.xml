@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Home">
-        <activity android:name=".ViewHealthCard"></activity>
+        <activity android:name=".ViewDonor"></activity>
+        <activity android:name=".DonorLogin" />
+        <activity android:name=".DonorEnrollment" />
+        <activity android:name=".ViewHealthCard" />
         <activity android:name=".AddHealthEntry" />
         <activity android:name=".DonorHome" />
         <activity android:name=".MainActivity" />

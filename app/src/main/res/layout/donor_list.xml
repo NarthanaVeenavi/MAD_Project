@@ -1,0 +1,104 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="wrap_content">
+
+<TextView
+    android:id="@+id/textViewID"
+    android:layout_margin="5dp"
+    android:textSize="18dp"
+    android:text="Id"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<EditText
+    android:id="@+id/editText_name"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="@string/date"
+    android:textSize="18dp" />
+
+<EditText
+    android:id="@+id/editText_dob"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="@string/venue"
+    android:textSize="18sp" />
+
+<EditText
+    android:id="@+id/editText_address"
+    android:text="@string/entry"
+    android:layout_margin="5dp"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<EditText
+    android:id="@+id/editText_email"
+    android:text="Title"
+    android:layout_margin="5dp"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<EditText
+    android:id="@+id/editText_description"
+    android:text="Description"
+    android:layout_margin="5dp"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editText_blood"
+        android:text="Description"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editText_nic"
+        android:text="Description"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<LinearLayout
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:backgroundTint="#F44336"
+        android:id="@+id/button_edit"
+        android:layout_weight="2"
+        android:layout_margin="2dp"
+        android:text="Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_margin="2dp"
+        android:backgroundTint="#F44336"
+        android:id="@+id/button_delete"
+        android:layout_weight="2"
+        android:text="Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+<View
+    android:layout_margin="5dp"
+    android:background="#C5C5C5"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+
+</LinearLayout>

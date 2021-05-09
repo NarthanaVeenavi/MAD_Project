@@ -18,6 +18,8 @@
     <string name="entry">Health Entry Type</string>
     <string name="title">Entry Title</string>
     <string name="description">Description</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
 
 
 </resources>

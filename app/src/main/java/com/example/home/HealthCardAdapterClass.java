@@ -1,5 +1,6 @@
 package com.example.home;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -45,12 +46,37 @@ public class HealthCardAdapterClass extends RecyclerView.Adapter<HealthCardAdapt
         holder.editText_health.setText(healthCardModelClass.getHealth());
         holder.editText_title.setText(healthCardModelClass.getTitle());
         holder.editText_description.setText(healthCardModelClass.getDescription());
+
+        holder.button_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Integer intId = healthCardModelClass.getId();
+                String stringDate = holder.editText_date.getText().toString();
+                String stringVenue = holder.editText_venue.getText().toString();
+                String stringTitle = holder.editText_title.getText().toString();
+                String stringDescription = holder.editText_description.getText().toString();
+
+                databaseHelperClass.updateHealthCard(new HealthCardModelClass(intId,stringDate,stringVenue,stringTitle,stringDescription));
+                notifyDataSetChanged();
+                ((Activity) context).finish();
+                context.startActivity(((Activity) context).getIntent());
+            }
+        });
+
+        holder.button_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                databaseHelperClass.deleteHealthCard(healthCardModelClass.getId());
+                healthCard.remove(position);
+                notifyDataSetChanged();
+            }
+        });
     }
 
 
     @Override
     public int getItemCount() {
-        return 0;
+        return healthCard.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
@@ -67,9 +93,9 @@ public class HealthCardAdapterClass extends RecyclerView.Adapter<HealthCardAdapt
             super(itemView);
 
             textViewID = itemView.findViewById(R.id.textViewID);
-            editText_date = itemView.findViewById(R.id.editText_date);;
+            editText_date = itemView.findViewById(R.id.editText_date);
             editText_venue = itemView.findViewById(R.id.editText_venue);
-            editText_health = itemView.findViewById(R.id.editText_health);;
+            editText_health = itemView.findViewById(R.id.editText_health);
             editText_title = itemView.findViewById(R.id.editText_title);
             editText_description = itemView.findViewById(R.id.editText_description);
 

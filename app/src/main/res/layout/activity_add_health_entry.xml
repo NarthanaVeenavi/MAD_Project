@@ -56,6 +56,7 @@ tools:context=".AddHealthEntry">
         android:ems="10"
         android:inputType="textPersonName"
 
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.372"
@@ -177,8 +178,7 @@ tools:context=".AddHealthEntry">
         android:id="@+id/button_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/red_dark"
-        android:backgroundTint="#00FFFFFF"
+        android:backgroundTint="@color/red_dark"
         android:backgroundTintMode="screen"
         android:drawableTint="#00FFFFFF"
         android:text="VIEW"
@@ -198,8 +198,7 @@ tools:context=".AddHealthEntry">
         android:id="@+id/button_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/red_dark"
-        android:backgroundTint="#00FFFFFF"
+        android:backgroundTint="@color/red_dark"
         android:backgroundTintMode="screen"
         android:drawableTint="#00FFFFFF"
         android:text="SAVE"

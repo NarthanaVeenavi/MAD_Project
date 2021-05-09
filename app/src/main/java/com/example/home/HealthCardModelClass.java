@@ -27,6 +27,9 @@ public class HealthCardModelClass {
         this.description = description;
     }
 
+    public HealthCardModelClass(Integer id, String stringDate, String stringVenue, String stringTitle, String stringDescription) {
+    }
+
     public Integer getId() {
         return id;
     }
