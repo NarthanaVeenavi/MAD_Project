@@ -19,18 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="43dp"
-        android:layout_height="29dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.008"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.018"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
-
     <EditText
         android:id="@+id/editTextHosName"
         android:layout_width="349dp"
@@ -73,28 +61,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="25dp"
-        android:layout_height="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.81"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.018"
-        app:srcCompat="@android:drawable/ic_popup_reminder" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="47dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_search" />
 
     <EditText
         android:id="@+id/editTextDate"

@@ -113,7 +113,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textPassword"
         android:padding="15dp"
         android:textColor="@color/black"
         android:textSize="20sp"
